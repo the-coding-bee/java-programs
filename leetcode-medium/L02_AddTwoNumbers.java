@@ -1,5 +1,5 @@
 
-public class L2_AddTwoNumbers {
+public class L02_AddTwoNumbers {
 
 	public static void main(String[] args) {
 
@@ -13,7 +13,7 @@ public class L2_AddTwoNumbers {
 		l2.next = new ListNode(6);
 		l2.next.next = new ListNode(4);
 
-		Solution_L2 s = new Solution_L2();
+		Solution_L02 s = new Solution_L02();
 		ListNode l3 = s.addTwoNumbers(l1, l2);
 
 		// display singly linked list
@@ -42,7 +42,7 @@ class ListNode {
 	}
 }
 
-class Solution_L2 {
+class Solution_L02 {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 		ListNode result = new ListNode(0);
