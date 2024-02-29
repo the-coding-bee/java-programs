@@ -11,14 +11,14 @@ public class B01_TwoSum {
 
 		Solution_B01 s = new Solution_B01();
 		System.out.println(Arrays.toString(s.twoSum(nums, target)));
-		System.out.println(Arrays.toString(s.twoSum_bruteForce(nums, target)));
+		System.out.println(Arrays.toString(s.twoSum_naive(nums, target)));
 	}
 
 }
 
 class Solution_B01 {
 
-	// O(N*logN)
+	// T -> O(N*logN)
 	public int[] twoSum(int[] nums, int target) {
 
 		Map<Integer, Integer> nums_map = new HashMap<Integer, Integer>();
@@ -32,8 +32,8 @@ class Solution_B01 {
 		throw new IllegalArgumentException("Match Not Found");
 	}
 
-	// O(N*N)
-	public int[] twoSum_bruteForce(int[] nums, int target) {
+	// T -> O(N*N)
+	public int[] twoSum_naive(int[] nums, int target) {
 
 		int[] output = new int[2];
 		for (int i = 0; i < nums.length; i++) {

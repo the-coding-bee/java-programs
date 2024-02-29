@@ -6,14 +6,14 @@ public class B02_BestTimeToBuyStocks {
 
 		Solution_B02 s = new Solution_B02();
 		System.out.println(s.maxProfit(prices));
-		System.out.println(s.maxProfit_bruteForce(prices));
+		System.out.println(s.maxProfit_naive(prices));
 	}
 
 }
 
 class Solution_B02 {
 
-	// O(N)
+	// T -> O(N)
 	public int maxProfit(int[] prices) {
 
 		int max_profit = 0;
@@ -31,8 +31,8 @@ class Solution_B02 {
 		return max_profit;
 	}
 
-	// O(N*N)
-	public int maxProfit_bruteForce(int[] prices) {
+	// T -> O(N*N)
+	public int maxProfit_naive(int[] prices) {
 
 		int max_profit = 0;
 
