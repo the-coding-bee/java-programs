@@ -2,21 +2,21 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class L01_TwoSum {
+public class L0001_TwoSum {
 
 	public static void main(String[] args) {
 
 		int[] nums = { 3, 2, 4 };
 		int target = 6;
 
-		Solution_L01 s = new Solution_L01();
+		Solution_L0001 s = new Solution_L0001();
 		System.out.println(Arrays.toString(s.twoSum(nums, target)));
 		System.out.println(Arrays.toString(s.twoSum_bruteForce(nums, target)));
 	}
 
 }
 
-class Solution_L01 {
+class Solution_L0001 {
 
 	// O(N*logN)
 	public int[] twoSum(int[] nums, int target) {

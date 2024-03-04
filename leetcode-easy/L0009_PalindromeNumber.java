@@ -1,16 +1,16 @@
-public class L09_PalindromeNumber {
+public class L0009_PalindromeNumber {
 	public static void main(String[] args) {
 
 		int x = 12321;
 		int y = 12345;
 
-		Solution_L09 s = new Solution_L09();
+		Solution_L0009 s = new Solution_L0009();
 		System.out.println(s.isPalindrome(x));
 		System.out.println(s.isPalindrome(y));
 	}
 }
 
-class Solution_L09 {
+class Solution_L0009 {
 	public boolean isPalindrome(int x) {
 
 		if (x < 0)

@@ -1,20 +1,20 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class L13_RomanToInteger {
+public class L0013_RomanToInteger {
 
 	public static void main(String[] args) {
 
 		String s1 = "LVIII";
 		String s2 = "MCMXCIV";
 
-		Solution_L13 s = new Solution_L13();
+		Solution_L0013 s = new Solution_L0013();
 		System.out.println(s.romanToInt(s1));
 		System.out.println(s.romanToInt(s2));
 	}
 }
 
-class Solution_L13 {
+class Solution_L0013 {
 	public int romanToInt(String s) {
 		Map<Character, Integer> map = new HashMap();
 
