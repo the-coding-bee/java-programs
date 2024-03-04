@@ -5,7 +5,6 @@ public class S01_ReverseAString {
 	public static void main(String[] args) {
 
 		String str = "TheCodingBee";
-
 		Solution_S01 s = new Solution_S01();
 
 		// Operate on String
@@ -33,11 +32,10 @@ class Solution_S01 {
 			return str;
 		else
 			return reverse_recursion(str.substring(1)) + str.charAt(0);
-
 	}
 
 	public String reverse_stringbuffer(String str) {
-		
+
 		StringBuffer buffer = new StringBuffer(str);
 		return buffer.reverse().toString();
 	}
@@ -59,7 +57,7 @@ class Solution_S01 {
 		return revStr;
 	}
 
-	/********************* CHAR ARRAY **********************/
+	/************************* CHAR ARRAY *************************/
 
 	public String reverse_charArray(String str) {
 
@@ -73,7 +71,7 @@ class Solution_S01 {
 		return revStr;
 	}
 
-	// In place reversal of array, so S->O(1), NO Extra Space used. T-->O(N/2)(left<right, only half of array is compared in loop)
+	//S->O(1), T-->O(N) 
 	public String reverse_charArray_twoPointers(String str) {
 
 		char[] charArry = str.toCharArray();
@@ -103,19 +101,15 @@ class Solution_S01 {
 
 		Stack<Character> st = new Stack<Character>();
 
-		for (int i = 0; i < charArry.length; i++) {
+		for (int i = 0; i < charArry.length; i++)
 			st.push(charArry[i]);
-		}
 
-		for (int i = 0; i < charArry.length; i++) {
+		for (int i = 0; i < charArry.length; i++)
 			charArry[i] = st.pop();
-		}
 
-		// Can't do charArry.toString()as it would return [C@77afea7d
 		for (char ch : charArry)
 			revStr = revStr + ch;//
 
 		return revStr;
 	}
-
 }
