@@ -10,8 +10,7 @@ public class A03_ReverseAnArray {
 		System.out.println(Arrays.toString(s.reverse(arr1)));
 		System.out.println(Arrays.toString(s.reverse_twoPointers(arr1)));
 
-		// Using different variable as the s.reverse_twoPointers method has already
-		// reversed the array in place
+		// Using different variable as the s.reverse_twoPointers method has already reversed the array in place
 		int[] arr2 = { 2, 500, 1, 6, 100, -675, 5 };
 		System.out.println(Arrays.toString(s.reverse_stack(arr2)));
 	}
@@ -31,8 +30,7 @@ class Solution_A03 {
 		return revArray;
 	}
 
-	// In place reversal of array, so S->O(1), NO Extra Space used
-	// T-->O(N/2)(left<right, only half of array is compared in loop)
+	// In place reversal of array, so S->O(1), NO Extra Space used.T-->O(N/2)(left<right, only half of array is compared in loop)
 	public int[] reverse_twoPointers(int[] a) {
 
 		int left = 0;

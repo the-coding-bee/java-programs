@@ -73,8 +73,7 @@ class Solution_S01 {
 		return revStr;
 	}
 
-	// In place reversal of array, so S->O(1), NO Extra Space used
-	// T-->O(N/2)(left<right, only half of array is compared in loop)
+	// In place reversal of array, so S->O(1), NO Extra Space used. T-->O(N/2)(left<right, only half of array is compared in loop)
 	public String reverse_charArray_twoPointers(String str) {
 
 		char[] charArry = str.toCharArray();
