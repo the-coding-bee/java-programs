@@ -5,4 +5,8 @@ The algorithm repeatedly selects the smallest (or largest) element from the unso
 
 <img width="329" alt="image" src="https://github.com/the-coding-bee/java-programs/assets/70087773/2336c4c1-d6c1-462e-ae07-379f31905f5f">
 
+## Bubble Sort
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. Note that after the iteration is complete, the smallest element has bubbled towards the first position.
+
+<img width="497" alt="image" src="https://github.com/the-coding-bee/java-programs/assets/70087773/cdc26fca-747b-4dcc-baba-cf22ae33e84b">
 
